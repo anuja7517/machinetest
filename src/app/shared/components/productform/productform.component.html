@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="productForm " (ngSubmit)="onsumit()">
+            <div class="form-group">
+                <label for="Pname">Product Name</label>
+                <input type="text" id="Pname" formControlName="Pname" class=form-control>
+            </div>
+            <div class="form-group">
+                <label for="Pdetails">Product details</label>
+                <textarea type="text" id="Pdetails" formControlName="Pdetails" rows ="3" class=form-control></textarea>
+            </div>
+            <div class="text-right">        
+            <button mat-button color="accent">In progress
+
+            </button>
+    
+            </div>
+
+        </form>
+    </div>
+</div>
